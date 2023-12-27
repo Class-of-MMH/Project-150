@@ -30,10 +30,10 @@
 *We will  Implement  Dinosaur character , Dinosaur movement, Dinosaur input using C++ to handle rendering and managing windows.*
 
 ## **Team members :**
-*Name : Aminul Ahsan Adil
+*Name : Aminul Ahsan Adil                                                                                         
 Reg : 2021331022*
 
-*Name : Zihan Lobib Chowdhury
+*Name : Zihan Lobib Chowdhury                                                                                                           
 Reg : 2021331050*
 
 
