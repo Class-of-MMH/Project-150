@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include "functions.cpp"
 
 using namespace std;
 
