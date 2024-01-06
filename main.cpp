@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	system("mode con: lines=29 cols=82");
+	system("mode con: lines=30 cols=100");
 	char ch;
 	int i;
 	getup();
@@ -13,7 +13,7 @@ int main()
 	{
 		while(!kbhit())
 		{
-			ds();
+			ds(0);
 			obj();
 		}
 		ch=getch();
@@ -30,7 +30,7 @@ int main()
 			obj();
 			}
 		}
-		else if (ch=='x')
+		else if (ch=='o')
 			return(0);
 	}
 
