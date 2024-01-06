@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
-#include<bits/stdc++.h>
+#include <iostream>
 #include <time.h>
 #include <windows.h>
 void gotoxy(int x, int y)
@@ -18,18 +18,26 @@ void delay(unsigned int mseconds)
 void getup()
 {
 	system("cls");
-	gotoxy(10,2);
-	printf("Press X to Exit, Press Space to Jump");
+	gotoxy(0,0);
+	for(int x=0;x<45;x++)
+	printf("__");
+	gotoxy(3,2);
+	printf("(*) Press 'Any key' to start. \n");
+	gotoxy(3,3);
+	printf("(*) Press 'Space-bar' to jump. \n");
+	gotoxy(3,4);
+	printf("(*) Press 'o' to Exit. \n");
+
 	gotoxy(62,2);
 	printf("SCORE : ");
-	gotoxy(1,25);
-	for(int x=0;x<79;x++)
-	printf("*");
+	gotoxy(0,25);
+	for(int x=0;x<45;x++)
+	printf("__");
 }
-
-int t,speed=40;
-void ds(int jump=0)
+int t,speed;
+void ds(int jump)
 {
+    int speed=40;
 	static int a=1;
 
 	if(jump==0)
@@ -42,11 +50,11 @@ void ds(int jump=0)
 	gotoxy(2,16-t);
 	printf("         ********");
 	gotoxy(2,17-t);
-	printf("         ********");
+	printf("         ***  ***");
 	gotoxy(2,18-t);
-	printf("         ********");
+	printf(" *       *** *** ");
 	gotoxy(2,19-t);
-	printf(" *      ******** ");
+	printf(" **     *******  ");
 	gotoxy(2,20-t);
 	printf(" ***  ********** ");
 	gotoxy(2,21-t);
@@ -55,34 +63,33 @@ void ds(int jump=0)
 	printf("   *********     ");
 	gotoxy(2,23-t);
 	if(jump==1 || jump==2){
-	printf("    ** **       ");
-	gotoxy(2,24-t);
-	printf("    **   **      ");
-	}else if(a==1)
+        printf("    ** **       ");
+        gotoxy(2,24-t);
+        printf("    **   *  *      ");
+	}
+	else if(a==1)
 	{
-	printf("    ****  ***    ");
-	gotoxy(2,24-t);
-	printf("      **         ");
-	a=2;
+        printf("    ****  ***    ");
+        gotoxy(2,24-t);
+        printf("      **         ");
+        a=2;
 	}
 	else if(a==2)
 	{
-	printf("     *** **      ");
-	gotoxy(2,24-t);
-	printf("          **     ");
-	a=1;
+        printf("     *** **      ");
+        gotoxy(2,24-t);
+        printf("          **     ");
+        a=1;
 	}
 	gotoxy(2,25-t);
 	if(jump!=0){
 		printf("                ");
 	}
-	else
-	{
-
-		printf("*****************");
-	}
+    else
+        printf("_________________");
 	delay(speed);
 }
+
 void obj()
 {
 	static int x=0,scr=0;
@@ -91,7 +98,7 @@ void obj()
 	scr=0;
 	speed=40;
 	gotoxy(36,8);
-	printf("Game Over");
+	printf("GAME OVER");
 	getch();
 	gotoxy(36,8);
 	printf("         ");
@@ -105,7 +112,7 @@ void obj()
 	gotoxy(74-x,23);
 	printf("  *    ");
 	gotoxy(74-x,24);
-	printf("  *  " );
+	printf("  *   ");
 	x++;
 	if(x==73)
 	{
