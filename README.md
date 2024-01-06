@@ -7,15 +7,12 @@
 ## **Controls**
 **• Jumping:** 
 *Press the "Spacebar" to make the dinosaur jump. Time your jumps to clear rocks and other obstacles.*
-    
-**• Ducking :**
-   *press the "Down Arrow" key to make the dinosaur duck. Use this to avoid flying pterodactyls and low-       hanging obstacles.*
 
 **•	Starting the Game:**
-   *Press the "Spacebar" to start the game.*
+   *Press the "Any Key" to start the game.*
    
-•	**Pause/Resume:** 
-   *Press the "P" key to pause the game. Press the "Spacebar" again to resume playing.*
+•	**Stopping the Game:** 
+   *Press the "o" key to stop the game.*
    
 •	**Restarting the Game:**
    *If your dinosaur gets caught by an obstacle, press the "Spacebar" to restart the game.*
@@ -23,7 +20,7 @@
 •	**Exiting the Game:** 
    *To exit the game, simply close the game window or tab.*
 ## **Gameplay :**
-*It’s a simple one-button game – just tap to make your dino jump, and tap again to make it duck. The more obstacles you avoid , the higher your score goes !  But watch out , because the obstacles come faster the longer you play*
+*It’s a simple one-button game – just tap to make your dino jump and cross the obstacle. The more obstacles you avoid , the higher your score goes !  But watch out , because the obstacles come faster the longer you play.*
 ## **Goal :**
 *The goal of a player is to collect points as many as possible.*
 ## Development goal :
